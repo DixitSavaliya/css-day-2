@@ -1,0 +1,87 @@
+@font-face {
+	font-family: 'work_sansregular';
+	src: url('../font/worksans-regular-webfont.eot');
+	src: url('../font/worksans-regular-webfont.eot?#iefix') format('embedded-opentype'),
+	url('../font/worksans-regular-webfont.woff2') format('woff2'),
+	url('../font/worksans-regular-webfont.woff') format('woff'),
+	url('../font/worksans-regular-webfont.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+
+}
+@font-face {
+	font-family: 'work_sansbold';
+	src: url('../font/worksans-bold-webfont.eot');
+	src: url('../font/worksans-bold-webfont.eot?#iefix') format('embedded-opentype'),
+	url('../font/worksans-bold-webfont.woff2') format('woff2'),
+	url('../font/worksans-bold-webfont.woff') format('woff'),
+	url('../font/worksans-bold-webfont.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+
+}
+
+table {
+	font-family: arial, sans-serif;
+	border-collapse: collapse;
+	width: 100%;
+}
+
+td, th {
+	border: 1px solid #dddddd;
+	text-align: left;
+	padding: 8px;
+}
+tr:nth-child(even) {
+	background-color: #dddddd;
+}
+
+.form{
+
+	padding: 20px;
+	border: 1px solid black;
+	margin: 0 auto;
+	background-color: rgba(255, 99, 71, 0.8);
+	
+
+}
+.tl{
+
+	
+	margin: 0 auto;
+	margin-bottom: 20px;
+	background-color: rgba(255, 99, 71, 0.8);
+	
+}
+textarea {
+	resize: none;
+	width: 100%;
+}
+#loader {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+
+  content: url('../images/b1.gif');
+
+  
+}
+#myDiv {
+  display: none;
+}
+body{
+
+	background-color: lightblue;
+}
+th{
+
+	font-family: 'work_sansbold';
+}
+td{
+
+	
+	font-family: 'work_sansregular';
+}

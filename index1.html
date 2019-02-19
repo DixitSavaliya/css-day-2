@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Css Day 2</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+	<link rel="stylesheet" type="text/css" href="css/stl.css">
+</head>
+<body onload="myFunction()" style="margin:0;">
+
+	<div id="loader"></div>
+	<div class="container-fluid col-sm-5 col-sm-offset-3" style="display:none;" id="myDiv" class="animate-bottom">
+		<h2 style="text-align: center;font-size: 45px;">Employee Details </h2>
+
+		<div class="table-responsive">  
+			<table class="table table-condensed tl">
+				<thead>
+					<tr>
+						<th>Firstname</th>
+						<th>Lastname</th>
+						<th>Email</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Dixit</td>
+						<td>Savaliya</td>
+						<td>dixit20051998@gmail.com</td>
+					</tr>
+					<tr>
+						<td>Vishal</td>
+						<td>Pankhniya</td>
+						<td>vishal@gmail.com</td>
+					</tr>
+					<tr>
+						<td>Bhavik</td>
+						<td>patel</td>
+						<td>bhavik@gmail.com</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+
+		<form class="form">
+			<div class="row">
+				<div class="col-sm-6">
+					<div class="form-group">
+						<label>Firstname:</label>
+						<input type="fname" class="form-control"  placeholder="Enter fname..">
+					</div>
+				</div>
+				<div class="col-sm-6">
+					<div class="form-group">
+						<label>Lastname</label>
+						<input type="lname" class="form-control"  placeholder="Enter lname..">
+					</div>
+				</div>
+				<div class="col-sm-12">
+					<div class="form-group">
+						<label for="email">Email:</label>
+						<input type="email" class="form-control"  placeholder="Enter email..">
+					</div>
+				</div>
+			</div>
+
+			<div class="col-sm-6">
+				<label>Gender:</label>
+
+				<div class="radio">
+					<label><input type="radio" name="optradio" checked> Male <i class="fas fa-male"></i></label>
+				</div>
+				<div class="radio">
+					<label><input type="radio" name="optradio"> Female <i class="fas fa-female"></i></label>
+				</div>
+			</div>
+			<div class="col-sm-6">
+				<label>Technology:</label>
+
+				<div class="checkbox">
+					<label><input type="checkbox" value="" checked>Java <i class="fab fa-java"></i></label>
+				</div>
+				<div class="checkbox">
+					<label><input type="checkbox" value="">Php <i class="fab fa-php"></i></label>
+				</div>
+				<div class="checkbox disabled">
+					<label><input type="checkbox" value="">Python <i class="fab fa-python"></i></label>
+				</div>
+			</div>
+
+			<div class="form-group">
+				<label>About Me:</label>
+				<textarea class="form-control" rows="5" id="comment"></textarea>
+			</div>
+			<div class="text-right">
+				<button type="button" class="btn btn-primary btn-md">Save <i class="fas fa-save"></i></button>
+			</div> 
+		</div>
+		
+		<script>
+			var myVar;
+
+			function myFunction() {
+				myVar = setTimeout(showPage, 3000);
+			}
+
+			function showPage() {
+				document.getElementById("loader").style.display = "none";
+				document.getElementById("myDiv").style.display = "block";
+			}
+		</script>
+
+	</body>
+	</html>
